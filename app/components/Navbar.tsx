@@ -130,7 +130,9 @@ function MobileMenu() {
   useEffect(() => {
     if (menuRef.current) {
       gsap.to(menuRef.current, {
-        x: open ? 0 : '100%',
+        x: open ? 0 : 20,
+        opacity: open ? 1 : 0,
+        visibility: open ? 'visible' : 'hidden',
         duration: 0.3,
         ease: 'power2.out',
       });
@@ -161,8 +163,8 @@ function MobileMenu() {
       {/* Slide-in drawer */}
       <div
         ref={menuRef}
-        className="fixed top-0 right-0 h-full w-96 bg-gradient-to-b from-black/95 to-black/80 backdrop-blur-xl z-60 transform translate-x-full flex flex-col justify-start items-center gap-2 pt-16"
-        style={{ transform: 'translateX(100%)' }}
+        className="fixed top-0 right-0 h-full w-80 bg-gradient-to-b from-black/95 to-black/80 backdrop-blur-xl z-60 flex flex-col justify-start items-center gap-2 pt-16"
+        style={{ opacity: 0, visibility: 'hidden', transform: 'translateX(20px)' }}
       >
         {/* Close button */}
         <button

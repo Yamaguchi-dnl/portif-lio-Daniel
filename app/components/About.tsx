@@ -81,9 +81,9 @@ export default function About() {
       // Timeline items
       gsap.fromTo(
         sectionRef.current!.querySelectorAll(".timeline-item"),
-        { x: 30, opacity: 0 },
+        { y: 30, opacity: 0 },
         {
-          x: 0,
+          y: 0,
           opacity: 1,
           duration: 0.7,
           stagger: 0.2,
@@ -119,9 +119,9 @@ export default function About() {
       // Visual element
       gsap.fromTo(
         ".about-visual",
-        { x: 60, opacity: 0 },
+        { y: 60, opacity: 0 },
         {
-          x: 0,
+          y: 0,
           opacity: 1,
           duration: 1,
           ease: "power3.out",

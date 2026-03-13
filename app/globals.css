@@ -21,7 +21,6 @@
 html {
   scroll-behavior: auto;
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 /* Custom cursor — esconde o nativo em dispositivos com mouse */
@@ -43,8 +42,6 @@ body {
   color: #ffffff;
   font-family: var(--font-inter), 'Inter', sans-serif;
   line-height: 1.7;
-  overflow-x: hidden;
-  max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

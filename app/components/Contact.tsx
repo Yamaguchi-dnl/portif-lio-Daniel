@@ -65,9 +65,9 @@ export default function Contact() {
 
       gsap.fromTo(
         ".contact-info-item",
-        { x: 40, opacity: 0 },
+        { y: 40, opacity: 0 },
         {
-          x: 0,
+          y: 0,
           opacity: 1,
           duration: 0.7,
           stagger: 0.1,
