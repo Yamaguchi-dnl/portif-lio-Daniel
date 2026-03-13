@@ -293,7 +293,7 @@ export default function About() {
                 {/* Logo image */}
                 <div className="relative flex items-center justify-center" style={{height: 'clamp(5rem, 8vw, 7rem)', transform: 'translate(10%, -10%)'}}>
                   <img
-                    src="/Logo DANIEL.PNG"
+                    src="/Logo DANIEL.png"
                     alt="Daniel Yamaguchi Logo"
                     className="h-full w-auto object-contain"
                   />

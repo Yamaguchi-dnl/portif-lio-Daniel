@@ -66,7 +66,7 @@ export default function Navbar() {
         >
           {/* logo image from public folder */}
           <img
-            src="/Logo DANIEL.PNG"
+            src="/Logo DANIEL.png"
             alt="Daniel Yamaguchi Logo"
             className="h-8 w-auto"
           />

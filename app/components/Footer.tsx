@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center md:justify-start">
             <img
-              src="/Logo DANIEL.PNG"
+              src="/Logo DANIEL.png"
               alt="Daniel Yamaguchi Logo"
               className="h-8 w-auto"
             />
