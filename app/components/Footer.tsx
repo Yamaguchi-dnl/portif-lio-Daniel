@@ -48,7 +48,7 @@ export default function Footer() {
               },
               {
                 label: "Instagram",
-                href: "#",
+                href: "https://www.instagram.com/yamaguchi.dnl/",
                 icon: (
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
