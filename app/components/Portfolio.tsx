@@ -51,6 +51,17 @@ const projects = [
     accentColor: "#3b82f6",
     description: "Landing page SaaS otimizada para vendas com fluxos de conversão, pricing inteligente e integrações modernas.",
   },
+  {
+    id: 5,
+    name: "XP Invest",
+    category: "Redesign de Website",
+    href: "https://xp-invest.vercel.app/",
+    featured: false,
+    image: "/XP INVEST.png",
+    gradient: "linear-gradient(135deg, #0a0a00 0%, #1a1500 40%, #0f0d00 70%, #050500 100%)",
+    accentColor: "#f0b100",
+    description: "Redesign conceitual do website da XP Investimentos com foco em modernidade, clareza visual e experiência do usuário.",
+  },
 ];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
