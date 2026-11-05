@@ -1,0 +1,36 @@
+# Daniel Yamaguchi — Designer Gráfico & Estrategista Digital
+
+> Portfólio de Daniel Yamaguchi, designer gráfico e estrategista digital em Curitiba, Brasil. Identidade visual, web design, social media design e estratégia digital com foco em resultado e conversão.
+
+Site oficial: https://www.danielyamaguchi.com.br
+Idioma: português (pt-BR)
+Contato: WhatsApp +55 41 99582-4179 (https://wa.me/5541995824179)
+Instagram: https://www.instagram.com/yamaguchi.dnl/
+
+## Serviços
+
+- Identidade Visual & UI Design: identidades visuais completas, do logotipo ao manual de marca, e interfaces que convertem.
+- Estratégia Digital: planejamento e execução de estratégias para posicionar a marca onde o cliente está.
+- Social Media Design: artes, stories e reels para redes sociais com foco em engajamento.
+- Web Design: sites e landing pages modernos, responsivos e orientados a conversão.
+
+## Páginas
+
+- [Página inicial](https://www.danielyamaguchi.com.br/): apresentação, trabalhos selecionados, serviços, depoimentos, sobre e contato.
+- [Trabalhos selecionados](https://www.danielyamaguchi.com.br/#portfolio): projetos de web design, UI/UX e landing pages.
+- [Serviços](https://www.danielyamaguchi.com.br/#services)
+- [Sobre](https://www.danielyamaguchi.com.br/#about)
+- [Contato](https://www.danielyamaguchi.com.br/#contact)
+
+## Trabalhos
+
+- [CORTZ](https://cortz-saas.vercel.app/): landing page SaaS de alta conversão.
+- [Aquila Fund FCR](https://aquila-flame.vercel.app/): site com foco em conversão e UX para fundo de investimento português.
+- [ASAP](https://asap-bay.vercel.app/): interface moderna e minimalista focada em conversão.
+- [IAP Barreirinha](https://comunicacao.iapbarreirinha.com.br/): landing page otimizada para conversão.
+- [XP Invest](https://xp-invest.vercel.app/): redesign conceitual do website da XP Investimentos.
+- [Nube Lab Criativo](https://www.nubelabcriativo.com/): site institucional de agência criativa de marketing em Curitiba.
+
+## Opcional
+
+- [Versão completa para LLMs](https://www.danielyamaguchi.com.br/llms-full.txt)
