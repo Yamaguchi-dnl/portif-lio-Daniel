@@ -63,6 +63,17 @@ const projects = [
     accentColor: "#f0b100",
     description: "Redesign conceitual do website da XP Investimentos com foco em modernidade, clareza visual e experiência do usuário.",
   },
+  {
+    id: 6,
+    name: "Nube Lab Criativo",
+    category: "Site Institucional + Branding",
+    href: "https://www.nubelabcriativo.com/",
+    featured: false,
+    image: "/nubelab.webp",
+    gradient: "linear-gradient(135deg, #1a0f5e 0%, #4b22f0 50%, #1a0f5e 100%)",
+    accentColor: "#d8e338",
+    description: "Site institucional de agência criativa de marketing em Curitiba, com identidade vibrante, estratégia, captação de vídeo e social media.",
+  },
 ];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
