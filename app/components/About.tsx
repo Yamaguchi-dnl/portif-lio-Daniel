@@ -149,7 +149,7 @@ export default function About() {
         <div className="mb-16 lg:mb-20">
           <div className="about-header inline-flex items-center gap-2.5 mb-5 px-3.5 py-1.5 rounded-full border border-[#2a2a2a]" style={{ opacity: 0 }}>
             <span className="w-1.5 h-1.5 rounded-full bg-white" />
-            <span className="section-label text-[#555555]" style={{ fontFamily: "var(--font-inter)" }}>
+            <span className="section-label text-[#8a8a8a]" style={{ fontFamily: "var(--font-inter)" }}>
               Quem está por trás
             </span>
           </div>
@@ -200,12 +200,12 @@ export default function About() {
 
             {/* Skills */}
             <div ref={skillsRef} className="about-skills-wrapper">
-              <h4
-                className="about-skills-label section-label text-[#444444]"
+              <h3
+                className="about-skills-label section-label text-[#8a8a8a]"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 Habilidades
-              </h4>
+              </h3>
               <div className="about-skills-grid">
                 {skills.map((skill) => (
                   <span
@@ -221,18 +221,18 @@ export default function About() {
 
             {/* Timeline */}
             <div>
-              <h4
-                className="about-experience-label section-label text-[#444444]"
+              <h3
+                className="about-experience-label section-label text-[#8a8a8a]"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 Experiência
-              </h4>
+              </h3>
               <div className="timeline-container relative">
                 <div>
                   {experience.map((exp, i) => (
                     <div key={i} className="about-timeline-item timeline-item relative" style={{ opacity: 0 }}>
                       <div
-                        className="about-timeline-period text-xs text-[#555555] tracking-wide"
+                        className="about-timeline-period text-xs text-[#8a8a8a] tracking-wide"
                         style={{ fontFamily: "var(--font-inter)" }}
                       >
                         {exp.period}
@@ -252,7 +252,7 @@ export default function About() {
                         {exp.role}
                       </div>
                       <div
-                        className="text-[#555555] text-sm"
+                        className="text-[#8a8a8a] text-sm"
                         style={{ fontFamily: "var(--font-inter)" }}
                       >
                         {exp.company}
@@ -303,7 +303,7 @@ export default function About() {
                 </div>
 
                 <p
-                  className="dy-role text-[#555555] text-center text-sm leading-relaxed"
+                  className="dy-role text-[#8a8a8a] text-center text-sm leading-relaxed"
                   style={{ fontFamily: "var(--font-inter)" }}
                 >
                   Curitiba, Brasil<br />
@@ -325,7 +325,7 @@ export default function About() {
                         {s.n}
                       </div>
                       <div
-                        className="text-[#555555] text-xs tracking-wider"
+                        className="text-[#8a8a8a] text-xs tracking-wider"
                         style={{ fontFamily: "var(--font-inter)" }}
                       >
                         {s.l}

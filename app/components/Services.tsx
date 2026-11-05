@@ -389,7 +389,7 @@ export default function Services() {
 
                     {/* Title + description */}
                     <div>
-                      <h4
+                      <h3
                         style={{
                           fontSize: "16px",
                           fontWeight: 600,
@@ -401,7 +401,7 @@ export default function Services() {
                         }}
                       >
                         {service.title}
-                      </h4>
+                      </h3>
                       <p
                         style={{
                           fontSize: "14px",

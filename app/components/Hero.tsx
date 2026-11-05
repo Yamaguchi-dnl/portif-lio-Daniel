@@ -148,7 +148,7 @@ export default function Hero() {
         <div className="hero-fade inline-flex items-center gap-2.5 mb-6 lg:mb-8 px-4 py-2 rounded-full border border-[#2a2a2a] bg-[#111111]">
           <span className="w-1.5 h-1.5 rounded-full bg-white pulse-dot" />
           <span
-            className="section-label text-[#666666]"
+            className="section-label text-[#8a8a8a]"
             style={{ fontFamily: "var(--font-inter)" }}
           >
             Designer gráfico & Estrategista digital
@@ -158,6 +158,8 @@ export default function Hero() {
         {/* Main Title */}
         <div
           ref={titleRef}
+          role="heading"
+          aria-level={1}
           className="mb-5 md:mb-7"
           style={{ fontFamily: "var(--font-space-grotesk)" }}
         >

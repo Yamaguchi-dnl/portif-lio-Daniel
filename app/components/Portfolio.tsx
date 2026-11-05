@@ -256,7 +256,7 @@ export default function Portfolio() {
         <div className="mb-16 lg:mb-20">
           <div className="portfolio-header inline-flex items-center gap-2.5 mb-5 px-3.5 py-1.5 rounded-full border border-[#2a2a2a]" style={{ opacity: 0 }}>
             <span className="w-1.5 h-1.5 rounded-full bg-white" />
-            <span className="section-label text-[#555555]" style={{ fontFamily: "var(--font-inter)" }}>
+            <span className="section-label text-[#8a8a8a]" style={{ fontFamily: "var(--font-inter)" }}>
               Trabalhos Selecionados
             </span>
           </div>

@@ -76,7 +76,7 @@ function StatItem({ stat, index }: { stat: typeof stats[0]; index: number }) {
         <span ref={numRef}>0</span>
         <span>{stat.suffix}</span>
       </div>
-      <div className="stat-label" style={{ fontFamily: "var(--font-inter)", color: "#555555" }}>
+      <div className="stat-label" style={{ fontFamily: "var(--font-inter)", color: "#8a8a8a" }}>
         <span style={{ color: "#888888", fontWeight: 500, display: "block" }}>{stat.label}</span>
         {stat.sublabel}
       </div>

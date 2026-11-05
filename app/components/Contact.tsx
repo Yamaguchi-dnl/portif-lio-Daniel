@@ -94,8 +94,8 @@ export default function Contact() {
   };
 
   const inputClass =
-    "w-full bg-[#111111] border border-[#222222] rounded-xl px-5 py-4 text-white text-sm form-field transition-all duration-200 focus:border-white/40 focus:outline-none focus:ring-0 placeholder:text-[#444444]";
-  const labelClass = "block section-label text-[#555555] mb-2.5";
+    "w-full bg-[#111111] border border-[#222222] rounded-xl px-5 py-4 text-white text-sm form-field transition-all duration-200 focus:border-white/40 focus:outline-none focus:ring-0 placeholder:text-[#8a8a8a]";
+  const labelClass = "block section-label text-[#8a8a8a] mb-2.5";
 
   return (
     <section
@@ -108,7 +108,7 @@ export default function Contact() {
         <div className="mb-16">
           <div className="contact-header inline-flex items-center gap-2.5 mb-5 px-3.5 py-1.5 rounded-full border border-[#2a2a2a]" style={{ opacity: 0 }}>
             <span className="w-1.5 h-1.5 rounded-full bg-white" />
-            <span className="section-label text-[#555555]" style={{ fontFamily: "var(--font-inter)" }}>
+            <span className="section-label text-[#8a8a8a]" style={{ fontFamily: "var(--font-inter)" }}>
               Bora trabalhar juntos
             </span>
           </div>
@@ -193,12 +193,14 @@ export default function Contact() {
 
                 <div className="contact-form-field" style={{ opacity: 0 }}>
                   <label
+                    htmlFor="project-type"
                     className={labelClass}
                     style={{ fontFamily: "var(--font-inter)" }}
                   >
                     Tipo de Projeto
                   </label>
                   <select
+                    id="project-type"
                     className={`${inputClass} cursor-pointer`}
                     style={{ fontFamily: "var(--font-inter)" }}
                     required
@@ -248,7 +250,7 @@ export default function Contact() {
                     href="http://wa.me/5541995824179"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#555555] hover:text-white transition-colors duration-200 inline-flex items-center gap-1.5"
+                    className="text-sm text-[#8a8a8a] hover:text-white transition-colors duration-200 inline-flex items-center gap-1.5"
                     style={{ fontFamily: "var(--font-inter)" }}
                   >
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">

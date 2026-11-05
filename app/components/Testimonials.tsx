@@ -76,7 +76,7 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
             {testimonial.name}
           </div>
           <div
-            className="text-[#555555] text-xs"
+            className="text-[#8a8a8a] text-xs"
             style={{ fontFamily: "var(--font-inter)" }}
           >
             {testimonial.company}
@@ -127,7 +127,7 @@ export default function Testimonials() {
       <div className="container-main mb-16">
         <div className="testimonials-header inline-flex items-center gap-2.5 mb-5 px-3.5 py-1.5 rounded-full border border-[#2a2a2a]" style={{ opacity: 0 }}>
           <span className="w-1.5 h-1.5 rounded-full bg-white" />
-          <span className="section-label text-[#555555]" style={{ fontFamily: "var(--font-inter)" }}>
+          <span className="section-label text-[#8a8a8a]" style={{ fontFamily: "var(--font-inter)" }}>
             O que dizem sobre mim
           </span>
         </div>
