@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
+import dynamic from "next/dynamic";
+
+// tsparticles é pesado: carregado só no cliente, depois que a página já está interativa
+const Particles = dynamic(() => import("@tsparticles/react"), { ssr: false });
 
 export default function Hero() {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -11,11 +13,38 @@ export default function Hero() {
   const [particlesReady, setParticlesReady] = useState(false);
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
-      setParticlesReady(true);
-    });
+    let cancelled = false;
+    const load = async () => {
+      const [{ initParticlesEngine }, { loadSlim }] = await Promise.all([
+        import("@tsparticles/react"),
+        import("@tsparticles/slim"),
+      ]);
+      await initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      });
+      if (!cancelled) setParticlesReady(true);
+    };
+
+    // Adia para o navegador ficar ocioso (as partículas são sutis e só aparecem após a intro)
+    const w = window as Window & {
+      requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+    let idleId: number | undefined;
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    const start = () => {
+      if (w.requestIdleCallback) idleId = w.requestIdleCallback(load, { timeout: 3000 });
+      else timeoutId = setTimeout(load, 1500);
+    };
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+
+    return () => {
+      cancelled = true;
+      window.removeEventListener("load", start);
+      if (idleId !== undefined) w.cancelIdleCallback?.(idleId);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, []);
 
   useEffect(() => {
