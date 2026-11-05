@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -13,7 +14,7 @@ const projects = [
     category: "SaaS Landing Page + Conversão",
     href: "https://cortz-saas.vercel.app/",
     featured: false,
-    image: "/CORTZ.png",
+    image: "/cortz.webp",
     gradient: "linear-gradient(135deg, #0a1428 0%, #1a1f4e 40%, #0f1a3e 70%, #050a1a 100%)",
     accentColor: "#6366f1",
     description: "Landing page SaaS de alta conversão com design moderno, animações fluidas e foco em vendas.",
@@ -24,7 +25,7 @@ const projects = [
     category: "Web Design + UX",
     href: "https://aquila-flame.vercel.app/",
     featured: true,
-    image: "/AQUILA FOUND.png",
+    image: "/aquila-fund.webp",
     gradient: "linear-gradient(135deg, #0d0d1a 0%, #1a1a3e 30%, #0f1f3a 60%, #0a0a15 100%)",
     accentColor: "#4169e1",
     description: "Site estruturado com foco em conversão e experiência do usuário para fundo de investimento português.",
@@ -35,7 +36,7 @@ const projects = [
     category: "UI/UX Design",
     href: "https://asap-bay.vercel.app/",
     featured: false,
-    image: "/ASAP.png",
+    image: "/asap.webp",
     gradient: "linear-gradient(135deg, #000a1a 0%, #001a3d 40%, #000d2a 70%, #000510 100%)",
     accentColor: "#00d4ff",
     description: "Interface moderna e minimalista focada em conversão.",
@@ -46,7 +47,7 @@ const projects = [
     category: "Landing Page",
     href: "https://comunicacao.iapbarreirinha.com.br/",
     featured: false,
-    image: "/iap-barreirinha.png",
+    image: "/iap-barreirinha.webp",
     gradient: "linear-gradient(135deg, #0a1a28 0%, #1a3d4e 40%, #0d2a4e 70%, #051028 100%)",
     accentColor: "#3b82f6",
     description: "Landing page SaaS otimizada para vendas com fluxos de conversão, pricing inteligente e integrações modernas.",
@@ -57,7 +58,7 @@ const projects = [
     category: "Redesign de Website",
     href: "https://xp-invest.vercel.app/",
     featured: false,
-    image: "/XP INVEST.png",
+    image: "/xp-invest.webp",
     gradient: "linear-gradient(135deg, #0a0a00 0%, #1a1500 40%, #0f0d00 70%, #050500 100%)",
     accentColor: "#f0b100",
     description: "Redesign conceitual do website da XP Investimentos com foco em modernidade, clareza visual e experiência do usuário.",
@@ -106,10 +107,13 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
     >
       {/* Background: image or gradient */}
       {project.image ? (
-        <img
+        <Image
           src={project.image}
           alt={project.name}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          fill
+          sizes={project.featured ? "(max-width: 1280px) 100vw, 1200px" : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"}
+          quality={75}
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
       ) : (
         <div

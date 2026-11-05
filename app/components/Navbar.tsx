@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
 export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
@@ -65,9 +66,11 @@ export default function Navbar() {
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
         >
           {/* logo image from public folder */}
-          <img
-            src="/Logo DANIEL.png"
+          <Image
+            src="/logo-daniel.webp"
             alt="Daniel Yamaguchi Logo"
+            width={420}
+            height={255}
             className="h-8 w-auto"
           />
         </a>

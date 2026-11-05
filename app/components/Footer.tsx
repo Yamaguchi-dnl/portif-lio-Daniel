@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer
@@ -10,9 +12,11 @@ export default function Footer() {
         <div className="flex flex-col md:grid md:grid-cols-3 items-center gap-6">
           {/* Logo */}
           <div className="flex items-center md:justify-start">
-            <img
-              src="/Logo DANIEL.png"
+            <Image
+              src="/logo-daniel.webp"
               alt="Daniel Yamaguchi Logo"
+              width={420}
+              height={255}
               className="h-8 w-auto"
             />
           </div>

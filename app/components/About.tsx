@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -292,9 +293,11 @@ export default function About() {
               <div className="about-visual-card absolute inset-0">
                 {/* Logo image */}
                 <div className="relative flex items-center justify-center" style={{height: 'clamp(5rem, 8vw, 7rem)', transform: 'translate(10%, -10%)'}}>
-                  <img
-                    src="/Logo DANIEL.png"
+                  <Image
+                    src="/logo-daniel.webp"
                     alt="Daniel Yamaguchi Logo"
+                    width={420}
+                    height={255}
                     className="h-full w-auto object-contain"
                   />
                 </div>

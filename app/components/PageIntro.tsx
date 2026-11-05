@@ -91,9 +91,9 @@ export default function PageIntro() {
         style={{ opacity: 0 }}
       >
         <Image
-          src="/Logo DANIEL.png"
+          src="/logo-daniel.webp"
           alt="Daniel Yamaguchi"
-          width={180}
+          width={132}
           height={80}
           style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }}
           priority
